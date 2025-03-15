@@ -1,0 +1,79 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: path/to/yolo_dataset # dataset root dir
+train: images/train # train images (relative to 'path') 128 images
+val: images/test  # val images (relative to 'path') 128 images
+test: # test images (optional)
+
+# Classes
+names:
+  0: tick
+  1: (
+  2: )
+  3: asterisk
+  4: +
+  5: _
+  6: .
+  7: /
+  8: 0
+  9: 1
+  10: 2
+  11: 3
+  12: 4
+  13: 5
+  14: 6
+  15: 7
+  16: 8
+  17: 9
+  18: colon
+  19: A
+  20: B
+  21: C
+  22: D
+  23: E
+  24: F
+  25: G
+  26: H
+  27: I
+  28: J
+  29: K
+  30: L
+  31: M
+  32: N
+  33: O
+  34: P
+  35: Q
+  36: R
+  37: S
+  38: T
+  39: U
+  40: V
+  41: W
+  42: X
+  43: Y
+  44: Z
+  45: a
+  46: b
+  47: d
+  48: e
+  49: g
+  50: i
+  51: k
+  52: l
+  53: n
+  54: o
+  55: p
+  56: r
+  57: s
+  58: t
+  59: u
+  60: speical_symbol_127
+  61: speical_symbol_128
+  62: speical_symbol_129
+  63: speical_symbol_131
+  64: speical_symbol_132
+  65: speical_symbol_133
+  66: speical_symbol_134
+  67: speical_symbol_135
+  68: speical_symbol_136
+  69: speical_symbol_137
+  70: speical_symbol_138
