@@ -3,7 +3,6 @@
 import os
 import sys
 
-
 class MeiDatasetDirectoryProcessor:
     def __init__(self, splitted_dir, image_id_start=1, annotation_id_start=1):
         self.splitted_dir = splitted_dir

@@ -173,6 +173,7 @@ def coco_to_yolo(coco_dir, output_dir, split="train"):
 
 def create_dataset_yaml(output_dir, classes):
     """Create a dataset.yaml file for YOLO training"""
+
     yaml_content = f"""# YOLO Dataset Configuration - Converted from COCO format
 path: {output_dir}  # dataset root dir
 train: images/train  # train images (relative to 'path')
@@ -181,7 +182,6 @@ val: images/test  # val images (relative to 'path')
 # Classes
 names:
 """
-
     # Add class names
     for i, cls_name in enumerate(classes):
         yaml_content += f"  {i}: {cls_name}\n"
@@ -224,7 +224,7 @@ def main():
         else:
             print("Warning: classes.txt not found, could not create dataset.yaml")
 
-    print("Conversion complete!")
+    print("Conversion complete")
 
 
 if __name__ == "__main__":

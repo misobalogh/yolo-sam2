@@ -29,7 +29,7 @@ class HeightMapInstanceDataset(HeightMapDatabase):
         self.coco_url = kwargs.get("coco_url", "http://example.org")
         self.license_name = kwargs.get("license_name", "example_license")
         self.license_url = kwargs.get("license_url", "http://example.org")
-        self.contributor = kwargs.get("contributor", "example")
+        self.contributor = kwargs.get("contributor", "contributor_name")
         self.date_created = kwargs.get("date_created", datetime.datetime.now().strftime("%Y/%m/%d"))
 
     def create_coco_dataset(self, root_dir, output_dir="coco_dataset",
@@ -304,8 +304,8 @@ class HeightMapInstanceDataset(HeightMapDatabase):
 
 if __name__ == "__main__":
     dataset_utils = HeightMapInstanceDataset(
-        train_dir="C:/Users/balog/Code_win/Code/BP/DataSet/TrainingSet",
-        test_dir="C:/Users/balog/Code_win/Code/BP/DataSet/TestingSet",
+        train_dir="Path/To/TrainingSet",
+        test_dir="Path/To/TestingSet",
         splitted_dir="splitted_2500",
         csv_file="Glyphs.csv",
     )
